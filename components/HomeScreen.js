@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { TouchableOpacity, View, Image, Text, StyleSheet } from 'react-native';
+import { TouchableOpacity, View, Image, Text, StyleSheet, Dimensions } from 'react-native';
 import storage from '../Model/PosterificStorage';
 import { LoginButton, AccessToken } from 'react-native-fbsdk';
+
+let { height, width } = Dimensions.get("window");
 
 export default class HomeScreen extends React.Component {
   constructor(props) {
@@ -15,7 +17,7 @@ export default class HomeScreen extends React.Component {
         source={require('./../assets/images/login-splash-bg.jpg')}
         style={styles.splashContainer}
       >
-      <Text style={styles.mainTitle}>Posterific!</Text>
+        <Text style={styles.mainTitle}>Posterific!</Text>
         <Text style={styles.subTitle}>Poster making made easy.</Text>
         <LoginButton
           onLoginFinished={(err, res) => {
@@ -62,6 +64,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
+    height: height,
+    width: width,
   },
   mainTitle: {
     fontSize: 72,
