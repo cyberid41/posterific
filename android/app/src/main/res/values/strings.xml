@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">posterific</string>
-    <string name="facebook_app_id">1503400556349293</string>
-    <string name="ak_client_token">780f10910d177287c128fc7fc005c036</string>
+    <string name="facebook_app_id">134496263853237</string>
+    <string name="ak_client_token">4a169216bd2439c1272d9e91aa706944</string>
     <string name="fb_login_protocol_scheme">fb1503400556349293</string>
 </resources>
